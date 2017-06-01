@@ -1,0 +1,92 @@
+\hypertarget{request_8h}{}\section{include/request.h File Reference}
+\label{request_8h}\index{include/request.\+h@{include/request.\+h}}
+
+
+\hyperlink{structRequest}{Request} type and its parsing.  
+
+
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+Include dependency graph for request.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{request_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRequest}{Request}
+\begin{DoxyCompactList}\small\item\em defines a \hyperlink{structRequest}{Request} data type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structRequest}{Request} \hyperlink{request_8h_abb53a2add3eeca191b54bc374fe3e696}{parse\+Request} (const char $\ast$msg\+Str)
+\begin{DoxyCompactList}\small\item\em Parsing string into \hyperlink{structRequest}{Request} structure. \end{DoxyCompactList}\item 
+void \hyperlink{request_8h_a258bec69027196454ff82f1ba21f5c08}{print\+Request} (\hyperlink{structRequest}{Request} $\ast$req)
+\begin{DoxyCompactList}\small\item\em Printing \hyperlink{structRequest}{Request} structure. \end{DoxyCompactList}\item 
+void \hyperlink{request_8h_ab87e6408e088d61869ef3ae222064771}{parse\+Http\+Request} (const char $\ast$msg\+Str)
+\begin{DoxyCompactList}\small\item\em Parsing user string request into standart Http request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structRequest}{Request} type and its parsing. 
+
+
+
+\subsection{Function Documentation}
+\index{request.\+h@{request.\+h}!parse\+Http\+Request@{parse\+Http\+Request}}
+\index{parse\+Http\+Request@{parse\+Http\+Request}!request.\+h@{request.\+h}}
+\subsubsection[{\texorpdfstring{parse\+Http\+Request(const char $\ast$msg\+Str)}{parseHttpRequest(const char *msgStr)}}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+Http\+Request (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg\+Str}
+\end{DoxyParamCaption}
+)}\hypertarget{request_8h_ab87e6408e088d61869ef3ae222064771}{}\label{request_8h_ab87e6408e088d61869ef3ae222064771}
+
+
+Parsing user string request into standart Http request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg\+Str} & -\/ non http string \\
+\hline
+\end{DoxyParams}
+\index{request.\+h@{request.\+h}!parse\+Request@{parse\+Request}}
+\index{parse\+Request@{parse\+Request}!request.\+h@{request.\+h}}
+\subsubsection[{\texorpdfstring{parse\+Request(const char $\ast$msg\+Str)}{parseRequest(const char *msgStr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request} parse\+Request (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg\+Str}
+\end{DoxyParamCaption}
+)}\hypertarget{request_8h_abb53a2add3eeca191b54bc374fe3e696}{}\label{request_8h_abb53a2add3eeca191b54bc374fe3e696}
+
+
+Parsing string into \hyperlink{structRequest}{Request} structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg\+Str} & -\/ user request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parsed request type from string 
+\end{DoxyReturn}
+\index{request.\+h@{request.\+h}!print\+Request@{print\+Request}}
+\index{print\+Request@{print\+Request}!request.\+h@{request.\+h}}
+\subsubsection[{\texorpdfstring{print\+Request(\+Request $\ast$req)}{printRequest(Request *req)}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf Request} $\ast$}]{req}
+\end{DoxyParamCaption}
+)}\hypertarget{request_8h_a258bec69027196454ff82f1ba21f5c08}{}\label{request_8h_a258bec69027196454ff82f1ba21f5c08}
+
+
+Printing \hyperlink{structRequest}{Request} structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & -\/ request for print \\
+\hline
+\end{DoxyParams}

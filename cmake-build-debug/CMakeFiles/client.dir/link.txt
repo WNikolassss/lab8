@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/client.dir/client.c.o CMakeFiles/client.dir/src/request.c.o CMakeFiles/client.dir/src/matan.c.o  -o client -rdynamic -lprogbase -lxml2 -lprogbase -ljansson -lssl -lxml2 -ljansson -lssl 

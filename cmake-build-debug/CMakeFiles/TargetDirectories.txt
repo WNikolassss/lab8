@@ -1,0 +1,4 @@
+/home/nikolassss/projects/progbase2/labs/lab8/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nikolassss/projects/progbase2/labs/lab8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nikolassss/projects/progbase2/labs/lab8/cmake-build-debug/CMakeFiles/client.dir
+/home/nikolassss/projects/progbase2/labs/lab8/cmake-build-debug/CMakeFiles/server.dir

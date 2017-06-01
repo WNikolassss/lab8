@@ -1,0 +1,165 @@
+\hypertarget{matan_8h}{}\section{include/matan.h File Reference}
+\label{matan_8h}\index{include/matan.\+h@{include/matan.\+h}}
+
+
+Matan type , it`s parsing and general tasks.  
+
+
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$jansson.\+h$>$}\\*
+{\ttfamily \#include $<$list.\+h$>$}\\*
+{\ttfamily \#include $<$libxml/parser.\+h$>$}\\*
+{\ttfamily \#include $<$libxml/tree.\+h$>$}\\*
+{\ttfamily \#include $<$matan.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+Include dependency graph for matan.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{matan_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{matan_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmatan}{matan}
+\begin{DoxyCompactList}\small\item\em defines a tasks matan type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{matan_8h_ae63c72e940f793050744c6a702cd5bb2}{parse\+All\+Json} (List $\ast$list)
+\begin{DoxyCompactList}\small\item\em Parsing all matan structures into json. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{matan_8h_aa2d30a696077eaeadaefcb27d300a3b9}{parse\+Matan\+Request} (char $\ast$str, List $\ast$mat)
+\begin{DoxyCompactList}\small\item\em Parsing matan structures into json. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{matan_8h_a002524c67a53d7ac5af320f061d0fe70}{parse\+Id\+Request} (char $\ast$str, List $\ast$mat)
+\begin{DoxyCompactList}\small\item\em Parsing matan structures into json. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{matan_8h_a6a0a8b58c4f4bffdf1de623afcb1aff2}{file} ()
+\begin{DoxyCompactList}\small\item\em file reader \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{matan_8h_a9b6e64fe3a1c278517092bc7614d4fa1}{file\+Data} ()
+\begin{DoxyCompactList}\small\item\em file reader and task \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{matan_8h_aee5d32587b4a92a9c971ef7ad266ba09}{Default} ()
+\begin{DoxyCompactList}\small\item\em creating default server output \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Matan type , it`s parsing and general tasks. 
+
+
+
+\subsection{Function Documentation}
+\index{matan.\+h@{matan.\+h}!Default@{Default}}
+\index{Default@{Default}!matan.\+h@{matan.\+h}}
+\subsubsection[{\texorpdfstring{Default()}{Default()}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{matan_8h_aee5d32587b4a92a9c971ef7ad266ba09}{}\label{matan_8h_aee5d32587b4a92a9c971ef7ad266ba09}
+
+
+creating default server output 
+
+\begin{DoxyReturn}{Returns}
+json string with default server parameteres 
+\end{DoxyReturn}
+\index{matan.\+h@{matan.\+h}!file@{file}}
+\index{file@{file}!matan.\+h@{matan.\+h}}
+\subsubsection[{\texorpdfstring{file()}{file()}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ file (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{matan_8h_a6a0a8b58c4f4bffdf1de623afcb1aff2}{}\label{matan_8h_a6a0a8b58c4f4bffdf1de623afcb1aff2}
+
+
+file reader 
+
+\begin{DoxyReturn}{Returns}
+json string with file data 
+\end{DoxyReturn}
+\index{matan.\+h@{matan.\+h}!file\+Data@{file\+Data}}
+\index{file\+Data@{file\+Data}!matan.\+h@{matan.\+h}}
+\subsubsection[{\texorpdfstring{file\+Data()}{fileData()}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ file\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{matan_8h_a9b6e64fe3a1c278517092bc7614d4fa1}{}\label{matan_8h_a9b6e64fe3a1c278517092bc7614d4fa1}
+
+
+file reader and task 
+
+\begin{DoxyReturn}{Returns}
+json string with file data task 
+\end{DoxyReturn}
+\index{matan.\+h@{matan.\+h}!parse\+All\+Json@{parse\+All\+Json}}
+\index{parse\+All\+Json@{parse\+All\+Json}!matan.\+h@{matan.\+h}}
+\subsubsection[{\texorpdfstring{parse\+All\+Json(\+List $\ast$list)}{parseAllJson(List *list)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ parse\+All\+Json (
+\begin{DoxyParamCaption}
+\item[{List $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{matan_8h_ae63c72e940f793050744c6a702cd5bb2}{}\label{matan_8h_ae63c72e940f793050744c6a702cd5bb2}
+
+
+Parsing all matan structures into json. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ default list of matan structures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json string 
+\end{DoxyReturn}
+\index{matan.\+h@{matan.\+h}!parse\+Id\+Request@{parse\+Id\+Request}}
+\index{parse\+Id\+Request@{parse\+Id\+Request}!matan.\+h@{matan.\+h}}
+\subsubsection[{\texorpdfstring{parse\+Id\+Request(char $\ast$str, List $\ast$mat)}{parseIdRequest(char *str, List *mat)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ parse\+Id\+Request (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{List $\ast$}]{mat}
+\end{DoxyParamCaption}
+)}\hypertarget{matan_8h_a002524c67a53d7ac5af320f061d0fe70}{}\label{matan_8h_a002524c67a53d7ac5af320f061d0fe70}
+
+
+Parsing matan structures into json. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & -\/ default list of matan structures \\
+\hline
+{\em str} & -\/ user parametric request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json string 
+\end{DoxyReturn}
+\index{matan.\+h@{matan.\+h}!parse\+Matan\+Request@{parse\+Matan\+Request}}
+\index{parse\+Matan\+Request@{parse\+Matan\+Request}!matan.\+h@{matan.\+h}}
+\subsubsection[{\texorpdfstring{parse\+Matan\+Request(char $\ast$str, List $\ast$mat)}{parseMatanRequest(char *str, List *mat)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ parse\+Matan\+Request (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{List $\ast$}]{mat}
+\end{DoxyParamCaption}
+)}\hypertarget{matan_8h_aa2d30a696077eaeadaefcb27d300a3b9}{}\label{matan_8h_aa2d30a696077eaeadaefcb27d300a3b9}
+
+
+Parsing matan structures into json. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & -\/ default list of matan structures \\
+\hline
+{\em str} & -\/ user parametric request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json string 
+\end{DoxyReturn}
