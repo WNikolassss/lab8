@@ -1,1 +1,1 @@
-/usr/bin/cc  -g   CMakeFiles/server.dir/server.c.o CMakeFiles/server.dir/src/request.c.o CMakeFiles/server.dir/src/matan.c.o  -o server -rdynamic -lprogbase -lxml2 -lprogbase -ljansson -lssl -lxml2 -ljansson -lssl 
+/usr/bin/cc  -g   CMakeFiles/server.dir/server.c.o CMakeFiles/server.dir/src/request.c.o CMakeFiles/server.dir/src/matan.c.o CMakeFiles/server.dir/src/fileWork.c.o  -o server -rdynamic -lprogbase -lxml2 -lprogbase -ljansson -lssl -lxml2 -ljansson -lssl 

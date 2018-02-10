@@ -1,4 +1,3 @@
-#include <request.h>
 #include "request.h"
 
 Request parseRequest(const char * msgStr) {

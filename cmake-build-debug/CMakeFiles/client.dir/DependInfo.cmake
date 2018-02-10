@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/nikolassss/projects/progbase2/labs/lab8/client.c" "/home/nikolassss/projects/progbase2/labs/lab8/cmake-build-debug/CMakeFiles/client.dir/client.c.o"
+  "/home/nikolassss/projects/progbase2/labs/lab8/src/fileWork.c" "/home/nikolassss/projects/progbase2/labs/lab8/cmake-build-debug/CMakeFiles/client.dir/src/fileWork.c.o"
   "/home/nikolassss/projects/progbase2/labs/lab8/src/matan.c" "/home/nikolassss/projects/progbase2/labs/lab8/cmake-build-debug/CMakeFiles/client.dir/src/matan.c.o"
   "/home/nikolassss/projects/progbase2/labs/lab8/src/request.c" "/home/nikolassss/projects/progbase2/labs/lab8/cmake-build-debug/CMakeFiles/client.dir/src/request.c.o"
   )

@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+../include/fileWork.h
+string.h
+-
+stdio.h
+-
+assert.h
+-
+jansson.h
+-
+list.h
+-
+libxml/parser.h
+-
+libxml/tree.h
+-
+matan.h
+-
+time.h
+-
+
 ../include/matan.h
 string.h
 -
@@ -57,18 +77,22 @@ list.h
 -
 request.h
 -
+fileWork.h
+/home/nikolassss/projects/progbase2/labs/lab8/fileWork.h
 request.h
 /home/nikolassss/projects/progbase2/labs/lab8/request.h
 matan.h
 /home/nikolassss/projects/progbase2/labs/lab8/matan.h
+
+/home/nikolassss/projects/progbase2/labs/lab8/src/fileWork.c
+fileWork.h
+/home/nikolassss/projects/progbase2/labs/lab8/src/fileWork.h
 
 /home/nikolassss/projects/progbase2/labs/lab8/src/matan.c
 matan.h
 /home/nikolassss/projects/progbase2/labs/lab8/src/matan.h
 
 /home/nikolassss/projects/progbase2/labs/lab8/src/request.c
-request.h
--
 request.h
 /home/nikolassss/projects/progbase2/labs/lab8/src/request.h
 

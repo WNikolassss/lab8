@@ -47,22 +47,4 @@ char * parseMatanRequest(char * str , List * mat);
 */
 char * parseIdRequest(char * str , List * mat);
 
-/**
-    @brief file reader
-    @returns json string with file data
-*/
-char * file();
-
-/**
-    @brief file reader and task
-    @returns json string with file data task
-*/
-char * fileData();
-
-/**
-    @brief creating default server output
-    @returns json string with default server parameteres
-*/
-char * Default();
-
 #endif

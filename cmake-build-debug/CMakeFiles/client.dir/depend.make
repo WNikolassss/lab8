@@ -4,6 +4,31 @@
 CMakeFiles/client.dir/client.c.o: ../include/request.h
 CMakeFiles/client.dir/client.c.o: ../client.c
 
+CMakeFiles/client.dir/src/fileWork.c.o: ../include/fileWork.h
+CMakeFiles/client.dir/src/fileWork.c.o: ../include/matan.h
+CMakeFiles/client.dir/src/fileWork.c.o: ../src/fileWork.c
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/SAX.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/SAX2.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/dict.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/encoding.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/entities.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/globals.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/hash.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/list.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/parser.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/threads.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/tree.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/valid.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/xlink.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/xmlIO.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/xmlautomata.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/xmlerror.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/xmlexports.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/xmlmemory.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/xmlregexp.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/xmlstring.h
+CMakeFiles/client.dir/src/fileWork.c.o: /usr/include/libxml2/libxml/xmlversion.h
+
 CMakeFiles/client.dir/src/matan.c.o: ../include/matan.h
 CMakeFiles/client.dir/src/matan.c.o: ../src/matan.c
 CMakeFiles/client.dir/src/matan.c.o: /usr/include/libxml2/libxml/SAX.h

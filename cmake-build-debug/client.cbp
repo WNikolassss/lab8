@@ -141,6 +141,10 @@
 		<Unit filename="/home/nikolassss/projects/progbase2/labs/lab8/client.c">
 			<Option target="client"/>
 		</Unit>
+		<Unit filename="/home/nikolassss/projects/progbase2/labs/lab8/include/fileWork.h">
+			<Option target="client"/>
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/home/nikolassss/projects/progbase2/labs/lab8/include/matan.h">
 			<Option target="client"/>
 			<Option target="server"/>
@@ -150,6 +154,10 @@
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/nikolassss/projects/progbase2/labs/lab8/server.c">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/nikolassss/projects/progbase2/labs/lab8/src/fileWork.c">
+			<Option target="client"/>
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/nikolassss/projects/progbase2/labs/lab8/src/matan.c">

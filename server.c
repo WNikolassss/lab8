@@ -9,10 +9,13 @@
 #include <list.h>
 #include <request.h>
 
+#include "fileWork.h"
 #include "request.h"
 #include "matan.h"
 
 #define BUFFER_LEN 10240
+
+char * readAllText1(const char * fileName);
 
 int main(int argc, char * argv[]) {
 	const int port = 9999;
@@ -24,7 +27,7 @@ int main(int argc, char * argv[]) {
     matan1.id = 0;
 
     matan matan2;
-    strcpy(matan2.name , "defferential");
+    strcpy(matan2.name , "deff");
     matan2.id = 1;
 
     matan matan3;
@@ -88,7 +91,11 @@ int main(int argc, char * argv[]) {
             }else if(strcmp(req.data , "/file/data") == 0){
                 NetMessage_setDataString(message, fileData());
             }else if(strcmp(req.data , "/") == 0){
-                NetMessage_setDataString(message, Default());
+                NetMessage_setDataString(message, defaultResponse());
+            }else if(strcmp(req.data , "test") == 0){
+                NetMessage_setDataString(message, readAllText1("test.png"));
+            }else {
+                NetMessage_setDataString(message, "Incorrect command");
             }
         }
 
@@ -104,4 +111,25 @@ int main(int argc, char * argv[]) {
     // close listener
     TcpListener_close(server);
 	return 0;
+}
+
+char * readAllText1(const char * fileName){
+    FILE *file = fopen(fileName, "rb");
+    char *code;
+    size_t n = 0;
+    int c;
+
+    if (file == NULL) return NULL; //could not open file
+    fseek(file, 0, SEEK_END);
+    long f_size = ftell(file);
+    fseek(file, 0, SEEK_SET);
+    code = malloc(f_size);
+
+    while ((c = fgetc(file)) != EOF) {
+        code[n++] = (char)c;
+    }
+
+    code[n] = '\0';
+
+    return code;
 }

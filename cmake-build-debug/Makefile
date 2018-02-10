@@ -190,6 +190,36 @@ server.c.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.c.s
 .PHONY : server.c.s
 
+src/fileWork.o: src/fileWork.c.o
+
+.PHONY : src/fileWork.o
+
+# target to build an object file
+src/fileWork.c.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/fileWork.c.o
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/fileWork.c.o
+.PHONY : src/fileWork.c.o
+
+src/fileWork.i: src/fileWork.c.i
+
+.PHONY : src/fileWork.i
+
+# target to preprocess a source file
+src/fileWork.c.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/fileWork.c.i
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/fileWork.c.i
+.PHONY : src/fileWork.c.i
+
+src/fileWork.s: src/fileWork.c.s
+
+.PHONY : src/fileWork.s
+
+# target to generate assembly for a file
+src/fileWork.c.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/fileWork.c.s
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/fileWork.c.s
+.PHONY : src/fileWork.c.s
+
 src/matan.o: src/matan.c.o
 
 .PHONY : src/matan.o
@@ -266,6 +296,9 @@ help:
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
+	@echo "... src/fileWork.o"
+	@echo "... src/fileWork.i"
+	@echo "... src/fileWork.s"
 	@echo "... src/matan.o"
 	@echo "... src/matan.i"
 	@echo "... src/matan.s"

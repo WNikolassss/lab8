@@ -29,6 +29,8 @@ int main(void) {
 	char request[BUFFER_LEN] = "";
 	fgets(request, BUFFER_LEN, stdin);
 	request[strlen(request)-1] = '\0';
+	char * temp1 = malloc(sizeof(char*));
+	strcpy(temp1,request);
 	parseHttpRequest(request);
 	NetMessage_setDataString(message, request);
 
@@ -55,6 +57,16 @@ int main(void) {
 	printf("Response received from server (%d bytes): %s\r\n", 
 		NetMessage_dataLength(message),
 		NetMessage_data(message));
+
+		puts(temp1);
+		if(strcmp(temp1,"test") == 0){
+			FILE *f;
+			f = fopen("test1.png", "wb");
+
+			fprintf(f, "%s",NetMessage_data(message));
+			fclose(f);
+		}
+
 }
 //
 // close client object
